@@ -1,0 +1,31 @@
+{
+  "name": "rybot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryannarnoldd/RyBot.git"
+  },
+  "keywords": [
+    "discord.js",
+    "discord-bot"
+  ],
+  "author": "ryannarnoldd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryannarnoldd/RyBot/issues"
+  },
+  "homepage": "https://github.com/ryannarnoldd/RyBot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "ms": "^2.1.3"
+  }
+}
