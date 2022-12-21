@@ -2,7 +2,10 @@ const client = require('../index').client
 
 message_replies = {'yee': 'haw!', 'ping': 'pong!', 'hi': 'hello!', 
                    'hello': 'hi!', 'hey': 'hi!', 'yo': 'hey!',
-                   'how are you?': 'I am good'}
+                   'how are you?': 'I am good', 'how are you doing?': 'I am good',
+                    'how are you': 'I am good'}
+
+
 
 client.on('messageCreate', async message => {
     if (message.author.bot || message.channel.type=='DM') return;

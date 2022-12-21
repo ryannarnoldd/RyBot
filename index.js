@@ -3,6 +3,7 @@ const fs = require('fs')
 const { Client, GatewayIntentBits, ActivityType, Collection } = require('discord.js');
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
+// Looking next for efficient way(s) to do this!
 client.commands = client.aliases = client.events = client.slashCommands = new Collection();
 module.exports.client = client
 
