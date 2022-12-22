@@ -7,6 +7,9 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBit
 client.commands = client.aliases = client.events = client.slashCommands = new Collection();
 module.exports.client = client
 
+// Looking for ways to merge these two handlers into one.
+// Or maybe just make a single handler for both commands and slash commands. (Handlers folder)
+
 // Events Handler
 fs.readdirSync('./events/').forEach( event => {
     const eventGet = require(`./events/${event}`);
